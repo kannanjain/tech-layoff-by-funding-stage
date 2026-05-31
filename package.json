@@ -1,0 +1,13 @@
+{
+  "name": "tech-layoff-survival-matrix",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build",
+    "deploy": "observable deploy"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.4"
+  }
+}
