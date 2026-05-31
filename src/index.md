@@ -123,6 +123,14 @@ Showing **${filtered.length}** US events: drag the timeline below to filter by d
   const svg = container.append("svg").attr("width", W).attr("height", H).style("overflow", "visible");
   const g   = svg.append("g").attr("transform", `translate(${M.left},${M.top})`); //margin and svg adjustment
 
+  // Chart title
+  svg.append("text")
+   .attr("x", W / 2).attr("y", 20)
+   .attr("text-anchor", "middle")
+   .style("font-size", "15px").style("font-weight", "700")
+   .style("fill", "#1e293b")
+   .text("Stages of Survival: US Tech Layoffs across Industries by Funding Stage");
+
   // Divider for x and y axis to make qudrants
   const midX = xSc("Private Equity");
   const midY = ySc(50);
@@ -229,9 +237,9 @@ Showing **${filtered.length}** US events: drag the timeline below to filter by d
   // Color legend on right margin
   const legendEntries = [
     { color: "#ef4444", title: ["Underfunded &", "Exposed"],        sub: "Startup, High Layoffs (≥50%)" },
-    { color: "#3b82f6", title: ["Capital-Efficient", "Survivors"],  sub: "Startup, Low Layoffs (<50%)" },
+    { color: "#3b82f6", title: ["Capital-Efficient", "Survivors"],  sub: "Startup, Resilient (<50%)" },
     { color: "#f59e0b", title: ["Funded but", "Struggling"],        sub: "Established, High layoffs (≥50%)" },
-    { color: "#22c55e", title: ["Funded and", "Resilient"],         sub: "Established,  Low Layoffs (<50%)" },
+    { color: "#22c55e", title: ["Funded and", "Resilient"],         sub: "Established,  Resilient (<50%)" },
   ];
   const legG = svg.append("g")
     .attr("transform", `translate(${M.left + IW + 24}, ${M.top + 10})`);
