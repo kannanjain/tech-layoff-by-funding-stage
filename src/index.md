@@ -410,3 +410,7 @@ Showing **${filtered.length}** US events: drag the timeline below to filter by d
   return svg.node();
 })()
 ```
+
+[View source on GitHub](https://github.com/kannanjain/tech-layoff-by-funding-stage)
+
+Data: [Tech Layoffs 2020–2025, Kaggle](https://www.kaggle.com/datasets/ulrikeherold/tech-layoffs-2020-2024)
