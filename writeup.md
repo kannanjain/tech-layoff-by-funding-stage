@@ -70,6 +70,7 @@ Dots within a band are jittered horizontally using a djb2 hash of `company + dat
 - **"Unknown" stage** was filtered out of both the data and the X axis. It added noise without analytical value.
 - **Non-US companies** were filtered out to make meaningful comparsons in same socioecnomic context
 - **Companies with $0 funding raised** were filtered out since they couldn't be placed meaningfully on the stage axis.
+- **Dot size legend** was omitted because it cluttered the right margin alongside the quadrant legend, and the tooltip already has the exact headcount on hover.
 
 ---
 
